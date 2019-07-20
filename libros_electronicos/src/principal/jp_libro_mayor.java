@@ -53,6 +53,7 @@ public class jp_libro_mayor extends javax.swing.JPanel {
         jTextField6 = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
 
+        setBackground(new java.awt.Color(255, 255, 255));
         setPreferredSize(new java.awt.Dimension(1024, 581));
 
         jLabel11.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N

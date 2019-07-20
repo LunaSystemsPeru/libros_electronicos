@@ -25,30 +25,40 @@ public class frm_movimientos_libros extends javax.swing.JFrame {
             case 0:
                 switch (id_sub_libro) {
                     case 0:
-                        jp_libro_diario panel=new jp_libro_diario();
-                        c_varios.llamar_panel_movimiento(panel);
+                        jp_libro_diario panel1=new jp_libro_diario();
+                        c_varios.llamar_panel_movimiento(panel1);
                         break;
                     case 1:
-                        
+                        jp_libro_diario_plan_contable panel2=new jp_libro_diario_plan_contable();
+                        c_varios.llamar_panel_movimiento(panel2);
                         break;
                 }
                 break;
             case 1:
                 switch (id_sub_libro) {
                     case 0:
+                        jp_libro_diario_FS panel3=new jp_libro_diario_FS();
+                        c_varios.llamar_panel_movimiento(panel3);
                         break;
                     case 1:
+                        jp_libro_diario_FS_plan_contable panel4=new jp_libro_diario_FS_plan_contable();
+                        c_varios.llamar_panel_movimiento(panel4);
                         break;
                 }
                 break;
             case 2:
-                
+                jp_libro_mayor panel5=new jp_libro_mayor();
+                c_varios.llamar_panel_movimiento(panel5);
                 break;
             case 3:
                 switch (id_sub_libro) {
                     case 0:
+                        jp_registro_compras panel6=new jp_registro_compras();
+                        c_varios.llamar_panel_movimiento(panel6);
                         break;
                     case 1:
+                        jp_registro_compras_operaciones panel7=new jp_registro_compras_operaciones();
+                        c_varios.llamar_panel_movimiento(panel7);
                         break;
                     case 2:
                         break;
@@ -147,7 +157,7 @@ public class frm_movimientos_libros extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(0, 0, 0)
                 .addComponent(jDesktopPane1))
         );
 

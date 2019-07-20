@@ -5,6 +5,9 @@
  */
 package principal;
 
+import java.awt.Frame;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Ruben
@@ -62,6 +65,7 @@ public class jp_registro_compras_operaciones extends javax.swing.JPanel {
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(255, 255, 255));
         setMaximumSize(new java.awt.Dimension(1024, 581));
         setMinimumSize(new java.awt.Dimension(1024, 581));
         setPreferredSize(new java.awt.Dimension(1024, 581));
@@ -150,6 +154,11 @@ public class jp_registro_compras_operaciones extends javax.swing.JPanel {
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/nuevo.png"))); // NOI18N
         jButton2.setText("Nueva");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
@@ -345,6 +354,14 @@ public class jp_registro_compras_operaciones extends javax.swing.JPanel {
                 .addContainerGap(49, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        Frame f = JOptionPane.getRootFrame();
+                    jd_agregar_registro_compras_operaciones dialog = new jd_agregar_registro_compras_operaciones(f, true);
+                    dialog.setLocationRelativeTo(null);
+                    dialog.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

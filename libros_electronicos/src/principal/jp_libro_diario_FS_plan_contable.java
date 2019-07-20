@@ -5,6 +5,9 @@
  */
 package principal;
 
+import java.awt.Frame;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Ruben
@@ -57,6 +60,11 @@ public class jp_libro_diario_FS_plan_contable extends javax.swing.JPanel {
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/nuevo.png"))); // NOI18N
         jButton2.setText("Nueva");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/modifi.png"))); // NOI18N
         jButton1.setText("Modificar");
@@ -277,6 +285,14 @@ public class jp_libro_diario_FS_plan_contable extends javax.swing.JPanel {
                 .addGap(8, 8, 8))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        Frame f = JOptionPane.getRootFrame();
+                    jd_agregar_libro_diario_plan_contable_FS dialog = new jd_agregar_libro_diario_plan_contable_FS(f, true);
+                    dialog.setLocationRelativeTo(null);
+                    dialog.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
